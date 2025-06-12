@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avalie uma de nossas lojas</title>
+  <style>
+    :root {
+      --vermelho: #b30000;
+      --cinza: #888888;
+      --preto: #222222;
+      --branco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--branco);
+      color: var(--preto);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--vermelho);
+      margin-bottom: 30px;
+    }
+
+    .review-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .review-buttons a {
+      padding: 14px;
+      border-radius: 10px;
+      background: var(--branco);
+      border: 2px solid var(--vermelho);
+      color: var(--vermelho);
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .review-buttons a:hover {
+      background: var(--vermelho);
+      color: var(--branco);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: var(--cinza);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Escolha a loja que você visitou:</h1>
+
+  <div class="review-buttons">
+    <a href="https://g.co/kgs/jrsZYLb" target="_blank">Óticas Maior Loja 1</a>
+    <a href="https://g.co/kgs/WxtmC9k" target="_blank">Óticas Maior Loja 2</a>
+    <a href="https://g.co/kgs/7X4RrFY" target="_blank">Óticas Maior Loja 3</a>
+    <a href="https://g.co/kgs/wg6W9JH" target="_blank">Óticas Maior Loja 4</a>
+  </div>
+
+  <footer>
+    © 2019 Óticas Maior
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!-- whatsapp.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp - Lojas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #b30000;
+      margin-bottom: 30px;
+    }
+
+    .whats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    .whats-item {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .whats-item a {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .whats-item a:hover {
+      background-color: #1ebd58;
+    }
+
+    .address {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media(min-width: 600px) {
+      .whats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Entre em contato com uma loja</h1>
+
+  <div class="whats-grid">
+    <div class="whats-item">
+      <a href="https://wa.me/5519994329095" target="_blank">Whats Loja 1</a>
+      <div class="address">Rua 5, 960 - Centro</div>
+    </div>
+    <div class="whats-item">
+      <a href="https://wa.me/5519999815132" target="_blank">Whats Loja 2</a>
+      <div class="address">Rua 1, 1398 - Centro</div>
+    </div>
+    <div class="whats-item">
+      <a href="https://wa.me/5519997137824" target="_blank">Whats Loja 3</a>
+      <div class="address">Rua 5, 1067 - Centro</div>
+    </div>
+    <div class="whats-item">
+      <a href="https://wa.me/5519971023770" target="_blank">Whats Loja 4</a>
+      <div class="address">Av. 3, 336 - Centro</div>
+    </div>
+  </div>
+</body>
+</html>

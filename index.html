@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page - Mobile</title>
+  <style>
+    :root {
+      --vermelho: #b30000;
+      --cinza: #888888;
+      --preto: #222222;
+      --branco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--branco);
+      color: var(--preto);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .background-logo {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.05;
+      z-index: 0;
+      max-width: 90vw;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      background: var(--branco);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: var(--vermelho);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--preto);
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 25px;
+      align-items: center;
+    }
+
+    .social-buttons a {
+      width: 80%;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      background: var(--branco);
+      border: 2px solid var(--vermelho);
+      color: var(--vermelho);
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .social-buttons a:hover {
+      background: var(--vermelho);
+      color: var(--branco);
+    }
+
+    .qr-access-button,
+    .google-reviews-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .qr-access-button {
+      background: var(--vermelho);
+      color: var(--branco);
+    }
+
+    .qr-access-button:hover {
+      background: #800000;
+    }
+
+    .google-reviews-button {
+      background: #ff9900;
+      color: var(--branco);
+    }
+
+    .google-reviews-button:hover {
+      background: #cc7a00;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: var(--cinza);
+    }
+
+    @media (min-width: 600px) {
+      .social-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .social-buttons a {
+        width: auto;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo de fundo" class="background-logo">
+
+  <div class="content">
+    <h1>Bem-vindo!</h1>
+    <p>Siga-nos nas Redes Sociais e deixe sua avaliação no Google 😎.</p>
+
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/oticas.maior" target="_blank">Instagram</a>
+      <a href="whatsapp.html">WhatsApp</a>
+      <a href="https://www.facebook.com/oticasmaior" target="_blank">Facebook</a>
+    </div>
+
+    <a href="pix.html" class="qr-access-button">Ver Pix das Lojas</a>
+
+    <a href="avaliacoes.html" class="google-reviews-button">
+  Deixe sua avaliação no Google!
+</a>
+
+    <footer>
+      © 2019 Óticas Maior
+    </footer>
+  </div>
+
+</body>
+</html>
